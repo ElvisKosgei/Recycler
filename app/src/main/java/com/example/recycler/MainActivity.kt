@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         val recyclerPeople: RecyclerView = findViewById(R.id.recyclerViewPeople)
         recyclerPeople.layoutManager = LinearLayoutManager(this)
 
-        val adapter = CustomAdapter(peopleList)
+        val adapter = CustomAdapter(peopleList, this)
 
         recyclerPeople.adapter = adapter
     }}
